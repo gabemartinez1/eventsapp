@@ -19,6 +19,10 @@ Route::get('/new-event', function () {
     return view('new-event');
 });
 
+Route::get('/mini-event', function () {
+    return view('mini-event');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
