@@ -20,9 +20,9 @@ class Event extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'date', 'type',
+        'name', 'description', 'setup', 'event-start', 'event-end', 'clean-up', 'entertainment-end', 'spaces', 'guests', 'event-type', 'even-contact', 'entrances', 'ops-needs', 'security-needs', 'vip', 'parking', 'admission', 'billing'
     ];
 
-    protected $hidden = ['created_at', 'updated_at', 'user_id'];
+    protected $hidden = ['created_at', 'updated_at', 'id'];
 
 }
